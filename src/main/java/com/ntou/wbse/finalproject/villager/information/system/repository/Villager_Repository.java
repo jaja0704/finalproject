@@ -13,9 +13,9 @@ public interface Villager_Repository extends MongoRepository<Villager, String> {
 
     Villager findByVillagerId(String villagerId);
 
-    Villager findByVillagerNameTr(String villagerNameTr);
+    List<Villager> findByVillagerNameTr(String villagerNameTr);
 
-    Villager findByVillagerNameEn(String villagerNameEn);
+    List<Villager> findByVillagerNameEn(String villagerNameEn);
 
     List<Villager> findByVillagerBirthMonth(String villagerBirthMonth);
 
@@ -27,6 +27,6 @@ public interface Villager_Repository extends MongoRepository<Villager, String> {
 
     List<Villager> findByVillagerPersonality(String villagerPersonality);
 
-    Villager findByVillagerMotto(String villagerMotto);
+    List<Villager> findByVillagerMotto(String villagerMotto);
 
 }

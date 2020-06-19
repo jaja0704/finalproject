@@ -20,12 +20,12 @@ public class Villager_ServiceImpl implements Villager_Service{
     }
 
     @Override
-    public Villager findByVillagerNameTr(String villagerNameTr) {
+    public List<Villager> findByVillagerNameTr(String villagerNameTr) {
         return VillagerRepository.findByVillagerNameTr(villagerNameTr);
     }
 
     @Override
-    public Villager findByVillagerNameEn(String villagerNameEn) {
+    public List<Villager> findByVillagerNameEn(String villagerNameEn) {
         return VillagerRepository.findByVillagerNameEn(villagerNameEn);
     }
 
@@ -55,7 +55,7 @@ public class Villager_ServiceImpl implements Villager_Service{
     }
 
     @Override
-    public Villager findByVillagerMotto(String villagerMotto) {
+    public List<Villager> findByVillagerMotto(String villagerMotto) {
         return VillagerRepository.findByVillagerMotto(villagerMotto);
     }
 

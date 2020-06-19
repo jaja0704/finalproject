@@ -9,9 +9,9 @@ public interface Villager_Service {
 
     Villager findByVillagerId(String villagerId);
 
-    Villager findByVillagerNameTr(String villagerNameTr);
+    List<Villager> findByVillagerNameTr(String villagerNameTr);
 
-    Villager findByVillagerNameEn(String villagerNameEn);
+    List<Villager> findByVillagerNameEn(String villagerNameEn);
 
     List<Villager> findByVillagerBirthMonth(String villagerBirthMonth);
 
@@ -23,7 +23,7 @@ public interface Villager_Service {
 
     List<Villager> findByVillagerPersonality(String villagerPersonality);
 
-    Villager findByVillagerMotto(String villagerMotto);
+    List<Villager> findByVillagerMotto(String villagerMotto);
 
     List<Villager> findAll();
 
